@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+
 import { ComponentesModule } from './componentes/componentes.module';
+import { PaginasModule } from './paginas/paginas.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ComponentesModule } from './componentes/componentes.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    PaginasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

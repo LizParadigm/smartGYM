@@ -1,0 +1,40 @@
+/*debe aplicarse a toda la pagina*/
+:host,
+inicio-de-sesion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.contenedorLogoInicioDeSesion {
+    min-width: 750px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.contenedorComponenteInicioDeSesion {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1125px) {
+    :host,
+    inicio-de-sesion {
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .contenedorLogoInicioDeSesion {
+        width: 115px;
+        margin: 0px auto;
+        min-width: 115px;
+        padding: 0px;
+    }
+  }
