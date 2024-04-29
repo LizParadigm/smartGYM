@@ -1,0 +1,29 @@
+<span class="contenedorIniciarSesion">
+
+    <div class="contenidoIniciarSesion">
+
+        <div style="margin-bottom: 10px; font-size: xx-large;">Iniciar sesion</div>
+        
+        <form (ngSubmit)="onSubmit()">
+            <div>
+                <label for="campoCorreoElectronico">Correo electronico:</label>
+                <input id="campoCorreoElectronico" type="text" name="CorreoElectronico" [(ngModel)]="correoElectronico" required>
+            </div>
+            <div class="formatoError">{{errorCorreoElectronico}}</div>
+            <div>
+                <label for="campoContraseña">Contraseña:</label>
+                <input id="campoContraseña" type="password" name="contraseña" [(ngModel)]="contrasena" required>
+            </div>
+            <div class="formatoError">{{errorContrasena}}</div>
+            <div style="align-items: center;">
+                <div style="width: 50%;">
+                    <p class="letrasPequeñasIniciarSesion">¿No tienes cuenta? ¡<a href="registrar-cliente">crea</a> una cuenta nueva!</p>
+                    <p class="letrasPequeñasIniciarSesion">¿Olvidaste tu contraseña? recuperala <a href="recuperar-cuenta">aqui</a>.</p>
+                </div> 
+                <button type="submit" style="margin: 0px auto;">Confirmar</button>
+            </div>
+        </form>
+
+    </div>
+
+</span>
