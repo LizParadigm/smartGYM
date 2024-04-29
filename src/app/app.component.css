@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+  }
+  
+  .max-w-md {
+    width: 400px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: none; /* Remove border if not desired */
+    border-radius: 5px;
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #333; /* Text color */
+  }
+  
+  p {
+    text-align: center;
+    color: #888; /* Adjust text color as needed */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Adjust margin as needed */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Adjust text color as needed */
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+  }
+  
