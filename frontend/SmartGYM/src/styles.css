@@ -14,8 +14,14 @@ body {
 */
 /*comodines*/
 .formatoError {
+	display: flex;
 	height: 21px;
     justify-content: center;
     font-size: small;
     color: #ee0000;
+}
+
+.limpiarBoton {
+    border: none;
+    background: none;
 }

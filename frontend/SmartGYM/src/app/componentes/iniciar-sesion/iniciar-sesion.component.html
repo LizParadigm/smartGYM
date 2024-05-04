@@ -12,12 +12,13 @@
             <div class="formatoError">{{errorCorreoElectronico}}</div>
             <div>
                 <label for="campoContraseña">Contraseña:</label>
-                <input id="campoContraseña" type="password" name="contraseña" [(ngModel)]="contrasena" required>
+                <input id="campoContraseña" type="password" name="contraseña" [(ngModel)]="contrasena" required maxlength="50">
             </div>
             <div class="formatoError">{{errorContrasena}}</div>
             <div style="align-items: center;">
                 <div style="width: 50%;">
-                    <p class="letrasPequeñasIniciarSesion">¿No tienes cuenta? ¡<a href="registrar-cliente">crea</a> una cuenta nueva!</p>
+                    <p class="letrasPequeñasIniciarSesion">¿No tienes cuenta? ¡<a [routerLink]="['/registrando']">crea</a> una cuenta nueva!</p>
+
                     <p class="letrasPequeñasIniciarSesion">¿Olvidaste tu contraseña? recuperala <a href="recuperar-cuenta">aqui</a>.</p>
                 </div> 
                 <button type="submit" style="margin: 0px auto;">Confirmar</button>
