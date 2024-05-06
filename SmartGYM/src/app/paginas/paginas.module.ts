@@ -7,6 +7,7 @@ import { ComponentesModule } from '../componentes/componentes.module';
 import { InicioDeSesionComponent } from './inicio-de-sesion/inicio-de-sesion.component';
 import { RegistrandoComponent } from './registrando/registrando.component';
 import { ClienteComponent } from './cliente/cliente.component';
+import { TiendaMembresiasComponent } from './tienda-membresias/tienda-membresias.component';
 
 
 
@@ -15,6 +16,7 @@ import { ClienteComponent } from './cliente/cliente.component';
     InicioDeSesionComponent,
     RegistrandoComponent,
     ClienteComponent,
+    TiendaMembresiasComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { ClienteComponent } from './cliente/cliente.component';
   exports: [
     InicioDeSesionComponent,
     RegistrandoComponent,
-    ClienteComponent
+    ClienteComponent,
+    TiendaMembresiasComponent
   ]
 })
 export class PaginasModule { }

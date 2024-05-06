@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-identificador-cliente',
@@ -25,6 +26,9 @@ export class IdentificadorClienteComponent {
   mostrarCaraTracera: boolean = true;
   
   //constructor
+  constructor (
+    private router:Router
+  ){}
 
   //botones
   voltearIdentificacion(){
@@ -37,6 +41,10 @@ export class IdentificadorClienteComponent {
       this.mostrarCaraTracera = false;
     }
   }
+
+  abrirTienda(){
+    this.router.navigateByUrl('membresias');
+  }
   //funciones
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -44,5 +52,5 @@ export class IdentificadorClienteComponent {
       this.mostrarCaraFrontal = true;
       this.mostrarCaraTracera = true;
     }
-  }
+  } 
 }
