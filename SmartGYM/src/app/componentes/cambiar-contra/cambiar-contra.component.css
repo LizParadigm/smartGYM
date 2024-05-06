@@ -1,0 +1,43 @@
+/* cambiar-contra.component.css */
+.contenedor-base {
+    position: relative; /* Permite posicionamiento absoluto */
+    border: 2px solid black; /* Borde negro de 2px */
+    padding: 20px;
+  }
+  
+  .contenedor-interno {
+    max-width: 300px; /* Reducir el ancho máximo a 300px */
+    margin: 0 auto; /* Mantenimiento del centrado horizontal */
+}
+  
+  .campo-contrasena {
+    margin-bottom: 15px;
+  }
+  
+  .mensaje-error {
+    color: red;
+    margin-top: 10px;
+  }
+  .campo-contrasena label {
+    display: block; 
+    margin-bottom: 5px; 
+  }
+  
+  .campo-contrasena input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+  }
+  .btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: darkred ;
+  }

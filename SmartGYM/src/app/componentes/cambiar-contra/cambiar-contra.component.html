@@ -1,0 +1,21 @@
+<div class="contenedor-base">
+    <div class="contenedor-interno">
+      <h2>Recuperar cuenta</h2>
+      <p>Ingrese su nueva contraseña.</p>
+  
+      <div class="campo-contrasena">
+        <label for="nuevaContrasena">Nueva contraseña:</label>
+        <input type="password" id="nuevaContrasena" #nuevaContrasenaInput required>
+      </div>
+  
+      <div class="campo-contrasena">
+        <label for="confirmarContrasena">Confirme su contraseña:</label>
+        <input type="password" id="confirmarContrasena" #confirmarContrasenaInput required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Confirmar</button>
+  
+      <div class="mensaje-error">{{ mensajeError }}</div>
+    </div>
+  </div>
+  
