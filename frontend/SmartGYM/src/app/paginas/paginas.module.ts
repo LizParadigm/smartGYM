@@ -13,7 +13,7 @@ import { ClienteComponent } from './cliente/cliente.component';
   declarations: [
     InicioDeSesionComponent,
     RegistrandoComponent,
-    ClienteComponent
+    ClienteComponent,
   ],
   imports: [
     CommonModule,

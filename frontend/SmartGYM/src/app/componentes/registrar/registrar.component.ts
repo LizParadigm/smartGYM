@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-registrar',
@@ -22,7 +23,10 @@ export class RegistrarComponent {
   forma!:FormGroup;
   
   /*constructor*/
-  constructor(private fb:FormBuilder){
+  constructor(
+    private fb:FormBuilder,
+    private http: HttpClient,
+    private router:Router){
     this.crearFormulario();
   }
 
@@ -65,7 +69,21 @@ export class RegistrarComponent {
   registrar(){
     this.mensajesError();
     if (this.politicasDePrivacidad && this.usosYCondiciones && this.forma.valid && this.validarParentesco()){
-      console.log('fase validar terminada :3');
+      console.log('fase validar terminada :3 iniciando envio al server', this.forma.value);
+      this.router.navigateByUrl('c/home');
+
+      
+      // const datosUsuario = this.forma.value;
+        
+      // this.http.post<any>('ingresar la direccion que me pase el encargado del server aqui', datosUsuario).subscribe(
+      //     (respuesta) => {
+      //         console.log('El registro se pudo, toho chiro :3 registro:', respuesta);
+      //         this.router.navigateByUrl('/cliente/home');
+      //     },
+      //     (error) => {
+      //         console.error('ups! hay pedos. error:', error);
+      //     }
+      // );
     }
   }
 
@@ -136,5 +154,21 @@ export class RegistrarComponent {
 
   aceptarUsosYCondiciones() {
     this.usosYCondiciones = !this.usosYCondiciones;
+  }
+
+  //redireccionar al home
+  entrarALaCuenta():void{
+    let tipoUsuario: string = 'llamar al servicio que detecta el tipo de usuario';
+    switch (tipoUsuario) {
+      case 'cliente':
+        this.router.navigateByUrl('c/home');
+        break;
+      case 'empleado':
+        this.router.navigateByUrl('e/home');
+        break;
+      case 'administrador':
+        this.router.navigateByUrl('a/home');
+        break;
+    }
   }
 }

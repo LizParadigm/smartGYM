@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'',component:InicioDeSesionComponent},
   {path:'ingresar',component:InicioDeSesionComponent},
   {path:'registrando', component:RegistrandoComponent},
-  {path:'cliente/home', component:ClienteComponent},
+  {path:'c/home', component:ClienteComponent},
 ];
 
 @NgModule({
