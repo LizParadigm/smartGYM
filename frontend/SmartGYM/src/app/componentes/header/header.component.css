@@ -2,10 +2,10 @@
     width: 100%;
     min-width: 375px;
     height: 60px;
-    padding: 7px;
-    background: #0000c2;
+    padding: 5px;
+    background: #073763;
     display: flex;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .contenidoHeader {
@@ -17,12 +17,19 @@
     color: white;
 }
 
+.contenidoHeader > li {
+    max-height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+}
+
 .tituloHeader {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 500;
 }
 
-.botonesHeader {
-    width: 40px;
-    height: 40px;
+.botonesHeader, img {
+    width: 48px;
+    height: 48px;
 }
+
