@@ -10,6 +10,9 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { HeaderComponent } from './header/header.component';
 import { IdentificadorClienteComponent } from './tarjetas/identificador-cliente/identificador-cliente.component';
 import { IdentificadorEmpleadoComponent } from './tarjetas/identificador-empleado/identificador-empleado.component';
+import { CambiarContraComponent } from './cambiar-contra/cambiar-contra.component';
+import { CodigorderecuperacionComponent } from './codigorderecuperacion/codigorderecuperacion.component';
+import { RecuperarcuentaComponent } from './recuperarcuenta/recuperarcuenta.component';
 
 
 
@@ -19,7 +22,11 @@ import { IdentificadorEmpleadoComponent } from './tarjetas/identificador-emplead
     RegistrarComponent,
     HeaderComponent,
     IdentificadorClienteComponent,
-    IdentificadorEmpleadoComponent
+    IdentificadorEmpleadoComponent,
+    CambiarContraComponent,
+    CodigorderecuperacionComponent,
+    RecuperarcuentaComponent
+
   ],
   imports: [
     CommonModule,

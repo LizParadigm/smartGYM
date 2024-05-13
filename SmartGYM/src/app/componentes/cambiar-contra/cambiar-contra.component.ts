@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
 
 @Component({
   selector: 'app-cambiar-contra',
@@ -6,20 +7,25 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./cambiar-contra.component.css']
 })
 export class CambiarContraComponent implements OnInit {
-  @ViewChild('nuevaContrasenaInput') nuevaContrasenaInput: any; // ElementRef
-  @ViewChild('confirmarContrasenaInput') confirmarContrasenaInput: any; // ElementRef
+  datosRecuperacion: FormGroup;
+  mensajeError: string = ''; 
 
-  mensajeError: string = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder) {
+    this.datosRecuperacion = this.fb.group({});
   }
 
-  cambiarContrasena() {
-    const nuevaContrasena: string = this.nuevaContrasenaInput.nativeElement.value;
-    const confirmarContrasena: string = this.confirmarContrasenaInput.nativeElement.value;
+  ngOnInit() {
+    this.datosRecuperacion = this.fb.group({
+      correo: ['', Validators.required],
+      contrasenaActual: ['', Validators.required],
+      nuevaContrasena: ['', Validators.required],
+      confirmarNuevaContrasena: ['', Validators.required] 
+    });
+  }
 
-    // ... (resto de la lógica)
+  confirmarNuevaContrasena() {
+    // Implementar tu lógica de confirmación aquí
+    console.log('Nueva contraseña confirmada');
   }
 }
+
