@@ -1,0 +1,62 @@
+<span class="contenedorIdentificacion" >
+    <ul class="contenidoIdentificacion" *ngIf="mostrarCaraFrontal">
+        <ng-container *ngTemplateOutlet="caraDelantera"></ng-container>
+    </ul>
+
+    <ul class="contenidoIdentificacion" *ngIf="mostrarCaraTracera">
+        <ng-container *ngTemplateOutlet="caraTracera"></ng-container>
+    </ul>
+    <button class="cambiarCara" type="button" (click)="cambiarCara()"></button>
+</span>
+
+
+
+<!-- frente -->
+<ng-template #caraDelantera>
+    <li class="identificacionImagen">
+        <img src="{{datosUsuario.membresia_registrada.membresia.imagen}}" alt="nivelMembresia">
+    </li>
+    <li>
+        <label><span class="formatoSubtitulo">Membresia: </span>{{datosUsuario.membresia_registrada.membresia.nombre}}</label>
+    </li>
+    <li>
+        <label><span class="formatoSubtitulo">Estado: </span><span>{{datosUsuario.estado_de_membresia}}</span></label>
+    </li>
+    <li>
+        <label><span class="formatoSubtitulo">Termina: </span>{{datosUsuario.membresia_registrada.fecha_expira}}</label>
+    </li>
+    <li class="botonesFrontales">
+        <button class="botonLimpio" type="button" (click)="this.router.navigateByUrl('home/membresias')">
+            <img src="{{iconoUpdate}}" alt=":3">
+        </button>
+        <button class="botonLimpio" (click)="cancelarMembresia()">
+            <img src="{{iconoDelete}}" alt=">:c"> 
+        </button>
+    </li>
+</ng-template>
+
+<!-- atras -->
+<ng-template #caraTracera>
+            <li class="identificacionImagen">
+            <img src="{{datosUsuario.QR}}" alt="nivelMembresia">
+        </li>
+        <li>
+            <label>{{datosUsuario.nombre}}</label>
+        </li>
+        <li *ngIf="tipoUsuario === 'empleado'">
+            <label>{{datosUsuario.puesto.nombre}}</label>
+        </li>
+
+        <li>
+            <label class="formatoSubtitulo">Sexo: </label>
+            <label>{{datosUsuario.sexo}}</label>
+        </li>
+        <li *ngIf="tipoUsuario==='cliente'">
+            <label class="formatoSubtitulo">Registrado desde: </label>
+            <label>{{datosUsuario.fecha_de_registro}}</label>
+        </li>
+        <li *ngIf="tipoUsuario === 'empleado'">
+            <label class="formatoSubtitulo">contratado desde: </label>
+            <label>{{datosUsuario.fecha_de_contratacion}}</label>
+        </li>
+</ng-template>

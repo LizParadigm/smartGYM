@@ -3,10 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
-import { ComponentesModule } from './componentes/componentes.module';
-import { PaginasModule } from './paginas/paginas.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -14,11 +11,11 @@ import { PaginasModule } from './paginas/paginas.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ComponentesModule,
-    PaginasModule
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync('noop')
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

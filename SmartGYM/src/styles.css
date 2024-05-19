@@ -1,27 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-	margin: 		0;
-	padding: 		0;
-	-webkit-box-sizing:	border-box;
-	-moz-box-sizing:	border-box;
-	box-sizing:		border-box;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/*
-body {
-	background: black;
-}
-*/
-/*comodines*/
-.formatoError {
-	display: flex;
-	height: 21px;
-    justify-content: center;
-    font-size: small;
-    color: #ee0000;
+:root {
+	--color-comun-1: #073763;
+	--color-comun-2: #333333;
+	--color-comun-3: #ffffff7c;
+	--color-filtro-modal: rgba(0,0,0,0.5);
+	--color-botton-1: #b50000;
+	--color-botton-2: #358500dc;
+	--color-botton-3: white;
+	--border-0: none;
+	--border-1: 1px solid #000;
+	--border-2: 2px solid #000;
+	--border-3: 3px solid #000;
+	--border-botton-1: .1px solid #000;
+	--font-color-1: white;
+	--font-color-2: black;
+	--font-color-3: #ee0000;
+	--font-color-4: #c20000;
+	--font-color-5: #3d9900dc;
+	--font-color-7: #fff6a4;
+	--font-color-8: #383200;
+	--background-color-1: #327d0047;
 }
 
-.limpiarBoton {
-    border: none;
-    background: none;
+body {
+	padding: 0;
+	margin: 0;
 }
+
+/*comodines*/
+.formatoError {
+	height: 21px;
+	font-size: small;
+	color: var(--font-color-3);
+}
+
+.formatoSubtitulo {
+	font-weight: 600;
+}
+
+.botonLimpio {
+	border: none;
+	background: none;
+}
+
+botton:disabled {
+	opacity: .5;
+}
+
+.confirmrBoton {
+	background: var(--color-botton-2);
+	border: 1px solid #000;
+}
+
+.colita {
+    position: 		fixed; 
+	position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

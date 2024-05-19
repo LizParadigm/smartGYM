@@ -1,0 +1,20 @@
+<div class="contenedor_membresia">
+    <ul class="contenido_membresia">
+        <li class="img_membresia">
+            <img src="assets/media/imagen-membresia.png" alt="">
+        </li>
+        <li>
+            <label class="formatoSubtitulo">{{nombre}}</label>
+        </li>
+        <li>
+            <label>{{descripcion}}</label>
+        </li>
+        <li class="fondo">
+            <label>{{duraccion}} por {{precio}}</label>
+        </li>
+        <li class="botones">
+            <button class="comprar" (click)="comprar()" *ngIf="!(this.id === this.id_membresiaAdquirida )">Comprar</button>
+        </li>
+    </ul>
+    <span class="membresia_adquirida" *ngIf="(this.id === this.id_membresiaAdquirida )"></span>
+</div>

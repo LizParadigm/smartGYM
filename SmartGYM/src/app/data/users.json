@@ -1,0 +1,140 @@
+{
+    "clientes": [
+      {
+        "id_cliente": 1,
+        "correo_electronico": "cliente1@example.com",
+        "contraseña": "contraseña123",
+        "nombre": "Juan Pérez",
+        "sexo": "Masculino",
+        "fecha_de_registro": "2024-05-13",
+        "estado_de_membresia": "activa",
+        "membresia_registrada": {
+          "id_membresia_registrada": 1,
+          "membresia": {
+            "id_membresia": 1,
+            "imagen":"https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=",
+            "nombre": "Nivel 1",
+            "descripcion": "Acceso a el gym y sus instalaciones durante 1 mes",
+            "duracion": 1,
+            "precio": "$200"
+          },
+          "descuento": {
+            "id_descuento": 1,
+            "nombre": "descuento 1",
+            "descripcion": "este es un ejemplo de descripcion bla bla bla bla",
+            "valor_porcentual": "10%"
+          },
+          "total_pagado":"$300",
+          "fecha_registro":"2024-05-13",
+          "fecha_expira": "2024-06-13"
+        },
+        "QR" : "assets/media/codigo-qr-chingon.png"
+      },
+      {
+        "id_cliente": 2,
+        "correo_electronico": "cliente2@example.com",
+        "contraseña": "contraseña123",
+        "nombre": "checo perez",
+        "sexo": "otro",
+        "fecha_de_registro": "2024-03-13",
+        "estado_de_membresia": "inactiva",
+        "membresia_registrada": {
+          "id_membresia_registrada": 0,
+          "membresia": {
+            "id_membresia": 0,
+            "imagen":"https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=",
+            "nombre": "",
+            "descripcion": "",
+            "duracion": 0,
+            "precio": "$"
+          },
+          "descuento": {
+            "id_descuento": 0,
+            "nombre": "",
+            "descripcion": "",
+            "valor_porcentual": "%"
+          },
+          "total_pagado":"$",
+          "fecha_registro":"",
+          "fecha_expira": ""
+        },
+        "QR" : "assets/media/codigo-qr-chingon.png"
+
+      }
+    ],
+    "empleados": [
+      {
+        "id_empleado": 1,
+        "correo_electronico": "empleado1@example.com",
+        "contraseña": "contraseña123",
+        "nombre": "alejandra lorax",
+        "sexo": "femenino",
+        "fecha_de_contratacion": "2023-11-13",
+        "puesto": {
+          "id_puesto": 1,
+          "nombre": "empleado",
+          "salario": "$1000",
+          "area_de_trabajo": "mostrador"
+        },
+        "estado_de_membresia": "inactiva",
+        "membresia_registrada": {
+          "id_membresia_registrada": 1,
+          "membresia": {
+            "id_membresia": 1,
+            "imagen":"https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=",
+            "nombre": "Nivel 1",
+            "descripcion": "Acceso a el gym y sus instalaciones durante 1 mes",
+            "duracion": 1,
+            "precio": "$200"
+          },
+          "descuento": {
+            "id_descuento": 1,
+            "nombre": "descuento 1",
+            "descripcion": "este es un ejemplo de descripcion bla bla bla bla",
+            "valor_porcentual": "10%"
+          },
+          "total_pagado":"$300",
+          "fecha_registro":"2022-12-13",
+          "fecha_expira": "2024-04-13"
+        },
+        "QR" : "assets/media/codigo-qr-chingon.png"
+      },
+      {
+        "id_empleado": 2,
+        "correo_electronico": "empleado2@example.com",
+        "contraseña": "contraseña123",
+        "nombre": "jose jose",
+        "sexo": "otro",
+        "fecha_de_contratacion": "2024-05-13",
+        "puesto": {
+          "id_puesto": 1,
+          "nombre": "empleado",
+          "salario": "$1000",
+          "area_de_trabajo": "mostrador"
+        },
+        "estado_de_membresia": "inactiva",
+        "membresia_registrada": {
+          "id_membresia_registrada": 0,
+          "membresia": {
+            "id_membresia": 0,
+            "imagen":"https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=",
+            "nombre": "",
+            "descripcion": "",
+            "duracion": 0,
+            "precio": "$"
+          },
+          "descuento": {
+            "id_descuento": 0,
+            "nombre": "",
+            "descripcion": "",
+            "valor_porcentual": "%"
+          },
+          "total_pagado":"$",
+          "fecha_registro":"",
+          "fecha_expira": ""
+        },
+        "QR" : "assets/media/codigo-qr-chingon.png"
+      }
+    ]
+  }
+  

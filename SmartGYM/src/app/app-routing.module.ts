@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthPageComponent } from '@modules/auth/pages/auth-page/auth-page.component';
+import { HomePageComponent } from '@modules/home/pages/home-page/home-page.component';
+import { HomeModule } from './modules/home/home.module';
 
-import { RegistrandoComponent } from './paginas/registrando/registrando.component';
-import { InicioDeSesionComponent } from './paginas/inicio-de-sesion/inicio-de-sesion.component';
-import { ClienteComponent } from './paginas/cliente/cliente.component';
-import { TiendaMembresiasComponent } from './paginas/tienda-membresias/tienda-membresias.component';
 
 const routes: Routes = [
-  {path:'',component:InicioDeSesionComponent},
-  {path:'ingresar',component:InicioDeSesionComponent},
-  {path:'registrando', component:RegistrandoComponent},
-  {path:'c/home', component:ClienteComponent},
-  {path:'membresias', component:TiendaMembresiasComponent},
+  {
+    path:'auth',
+    component:AuthPageComponent,
+    loadChildren:() => import('./modules/auth/auth.module'). then(module => module.AuthModule)
+  },
+  {
+    path:'home',
+    component:HomePageComponent,
+    loadChildren:() => import('./modules/home/home.module').then(module => module.HomeModule)
+  }
+
 ];
 
 @NgModule({

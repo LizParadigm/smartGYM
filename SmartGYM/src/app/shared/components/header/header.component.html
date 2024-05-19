@@ -1,0 +1,19 @@
+<nav class="contenedorHeader">
+    <ul class="contenidoHeader">
+        <li> 
+            <ng-container *ngTemplateOutlet="izquierda"></ng-container>  
+        </li>
+        <li class="tituloHeader">{{tituloHeader}}</li>
+        <li>
+            <ng-container *ngTemplateOutlet="derecha"></ng-container>
+        </li>
+    </ul>
+</nav>
+
+<ng-template #izquierda>
+    <button *ngIf="!this.rut.atHome()" class="botonLimpio botonesHeader" (click)="this.rut.retornar()"> <img class="iconoHeader" src="../../../assets/media/icon/volver.png" alt="X"></button>
+</ng-template>
+
+<ng-template #derecha>
+    <button *ngIf="this.rut.atHome()" class="botonLimpio botonesHeader" (click)="this.rut.cerrarSesion()"> <img class="iconoHeader" src="../../../assets/media/icon/cerrarSesion.png" alt="X"></button>
+</ng-template>

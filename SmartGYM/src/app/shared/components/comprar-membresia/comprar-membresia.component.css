@@ -1,0 +1,65 @@
+.contenido_comprarMembresia {
+        /* display: flex; */
+        background: var(--color-comun-2);
+        padding: 10px;
+}
+
+.campos_comprarMembresia {
+    display: flex;
+    min-width: 315px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    max-width: 315px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    color: var(--font-color-1)
+}
+
+.campos_comprarMembresia > li {
+    width: 100%;
+}
+
+.campos_comprarMembresia > label {
+    min-width: 21px;
+}
+
+.formatoSubtitulo {
+    width: 100%;
+}
+
+.campos_comprarMembresia > li > input {
+    width:  -webkit-fill-available;
+}
+
+.botones_comprarMembresia {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton_cancelarCompra {
+    background: var(--color-botton-1);
+    color: var(--font-color-1);
+    border: var(--border-1);
+}
+
+.boton_confirmarCompra {
+    background: var(--color-botton-2);
+    color: var(--font-color-2);
+    border: var(--border-1);
+}
+
+
+
+.img_membresia {
+    max-width: 315px;
+    width: 315px;
+    max-height: 315px;
+    height: 315px;
+}
+
+.img_membresia > img {
+    max-width: 315px;
+    max-height: 315px;
+}

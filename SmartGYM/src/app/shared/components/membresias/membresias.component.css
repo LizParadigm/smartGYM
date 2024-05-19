@@ -1,0 +1,13 @@
+/* :host,
+app-membresias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+span {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

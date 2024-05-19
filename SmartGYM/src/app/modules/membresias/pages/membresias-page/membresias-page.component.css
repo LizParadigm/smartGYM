@@ -1,0 +1,6 @@
+span {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,32 @@
+<span class="colita">
+    <div class="contenido_deleteMembresia">
+        <label class="titulo_deleteMembresia">Cancelar membresia</label>
+        <span *ngIf="cuerpoPredeterminado">
+            <ng-container *ngTemplateOutlet="principal"></ng-container>
+        </span>
+        <span *ngIf="!cuerpoPredeterminado">
+            <ng-container *ngTemplateOutlet="secundario"></ng-container>
+        </span>
+    </div>
+</span>
+
+
+<!--  -->
+
+<ng-template #principal>
+    <p class="cuerpo_deleteMembresia" *ngIf="this.estado_membresia==='activa'">Si continua se <span
+            class="palabra_eliminar">eliminara</span>su membresia SmartGym <span class="nombre">{{nombre}}</span> y sus
+        beneficios. ¿desea continuar?.</p>
+    <p class="cuerpo_deleteMembresia" *ngIf="this.estado_membresia==='inactiva'">Usted no posee una membresia SmartGYM
+        activa. Compre o reactive una si asi lo desea.</p>
+    <div class="botones_deleteMembresia">
+        <button type="button" (click)="cerrar()" class="boton1">{{textB1}}</button>
+        <button type="button" (click)="eliminarMembresia()" class="boton2"
+            *ngIf="this.estado_membresia ==='activa'">Confirmar</button>
+    </div>
+</ng-template>
+
+<ng-template #secundario>
+    <p *ngIf="membresiaCancelada">Su membresia a sido cancelada.</p>
+    <p *ngIf="!membresiaCancelada">Ha ocurrido un error en el proceso, intentelo mas tarde.</p>
+</ng-template>

@@ -1,0 +1,34 @@
+[
+    {
+        "id_membresia":1,
+        "imagen":"assets/media/imagen-membresia.png",
+        "nombre":"Nivel 1",
+        "descripcion":"Acceso a todas las instalaciones de SmartGYM durante 1 mes.",
+        "duracion":"1 mes",
+        "precio":"$100"
+    },
+    {
+        "id_membresia":2,
+        "imagen":"assets/media/imagen-membresia.png",
+        "nombre":"Nivel 2",
+        "descripcion":"Acceso a todas las instalaciones de SmartGYM durante 3 mes.",
+        "duracion":"3 mes",
+        "precio":"$200"
+    },
+    {
+        "id_membresia":3,
+        "imagen":"assets/media/imagen-membresia.png",
+        "nombre":"Nivel 3",
+        "descripcion":"Acceso a todas las instalaciones de SmartGYM durante 6 mes.",
+        "duracion":"6 mes",
+        "precio":"$300"
+    },
+    {
+        "id_membresia":4,
+        "imagen":"assets/media/imagen-membresia.png",
+        "nombre":"Nivel 4",
+        "descripcion":"Acceso a todas las instalaciones de SmartGYM durante 12 mes.",
+        "duracion":"12 mes",
+        "precio":"$500"
+    }
+]
