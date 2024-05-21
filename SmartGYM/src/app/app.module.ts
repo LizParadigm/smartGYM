@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CodigoderecuperacionComponent } from './shared/components/codigoderecuperacion/codigoderecuperacion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CodigoderecuperacionComponent
   ],
   imports: [
     BrowserModule,

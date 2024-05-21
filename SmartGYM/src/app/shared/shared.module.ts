@@ -13,6 +13,10 @@ import { MembresiasComponent } from './components/membresias/membresias.componen
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ComprarMembresiaComponent } from './components/comprar-membresia/comprar-membresia.component';
+import { CambiarContraComponent } from './components/cambiar-contra/cambiar-contra.component';
+import { RecuperarcuentaComponent } from './components/recuperarcuenta/recuperarcuenta.component';
+import { CodigoderecuperacionComponent } from './components/codigoderecuperacion/codigoderecuperacion.component';
+
 
 
 
@@ -26,7 +30,11 @@ import { ComprarMembresiaComponent } from './components/comprar-membresia/compra
     MembresiaComponent,
     MembresiasComponent,
     PruebasComponent,
-    ComprarMembresiaComponent
+    ComprarMembresiaComponent,
+    CambiarContraComponent,
+    RecuperarcuentaComponent,
+    CodigoderecuperacionComponent
+    
   ],
   imports: [
     CommonModule,

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MembresiasRoutingModule } from './membresias-routing.module';
-import { SharedModule } from '@shared/shared.module';
+import { SharedModule } from '@shared/SharedModule';
 import { MembresiasPageComponent } from './pages/membresias-page/membresias-page.component';
 
 

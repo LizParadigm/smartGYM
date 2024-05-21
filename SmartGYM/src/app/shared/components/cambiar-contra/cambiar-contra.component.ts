@@ -7,15 +7,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./cambiar-contra.component.css']
 })
 export class CambiarContraComponent implements OnInit {
-  datosRecuperacion: FormGroup;
+  NewPassword: FormGroup;
   mensajeError: string = ''; 
 
   constructor(private fb: FormBuilder) {
-    this.datosRecuperacion = this.fb.group({});
+    this.NewPassword = this.fb.group({});
   }
 
   ngOnInit() {
-    this.datosRecuperacion = this.fb.group({
+    this.NewPassword = this.fb.group({
       correo: ['', Validators.required],
       contrasenaActual: ['', Validators.required],
       nuevaContrasena: ['', Validators.required],
@@ -24,8 +24,6 @@ export class CambiarContraComponent implements OnInit {
   }
 
   confirmarNuevaContrasena() {
-    
     console.log('Nueva contraseña confirmada');
   }
 }
-
