@@ -1,0 +1,38 @@
+<div class="contenedor-base">
+  <div class="contenedor-interno">
+    <h2>Recuperar cuenta</h2>
+    <p>Ingrese su nueva contraseña.</p>
+
+    <form [formGroup]="datosRecuperacion" (ngSubmit)="recuperarCuenta()">
+      <div class="campo-contrasena">
+        <label for="nuevaContrasena">Nueva contraseña:</label>
+        <input
+          type="password"
+          id="nuevaContrasena"
+          name="nuevaContrasena"
+          #nuevaContrasenaInput
+          required
+          formControlName="nuevaContrasena"
+        />
+      </div>
+
+      <div class="campo-contrasena">
+        <label for="confirmarContrasena">Confirme su contraseña:</label>
+        <input
+          type="password"
+          id="confirmarContrasena"
+          name="confirmarContrasena"
+          #confirmarContrasenaInput
+          required
+          formControlName="confirmarContrasena"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Confirmar</button>
+
+      <div class="mensaje-error">{{ mensajeError }}</div>
+    </form>
+  </div>
+</div>
+
+  

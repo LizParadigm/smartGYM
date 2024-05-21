@@ -1,0 +1,19 @@
+<div class="contenedor-recuperar-cuenta">
+  <div class="contenedor-interno-recuperar-cuenta">
+    <h2>Recuperar cuenta</h2>
+    <p>Te hemos enviado un código de recuperación a tu correo electrónico. Cópialo y escríbelo a continuación para continuar con la recuperación de tu cuenta.</p>
+
+    <div class="codigo-container">
+        <form [formGroup]="datosRecuperacion" (ngSubmit)="confirmarRecuperacion()">
+            <label for="codigoInput">Código:</label>
+            <input type="text" 
+            id="codigoInput" 
+            class="campo-codigo" 
+            formControlName="codigoRecuperacion" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <p>¿No recibiste ningún código? <a href="#">Reenviar código</a></p>
+            <button type="submit" class="boton-confirmar">Confirmar</button>
+            <p class="codigo-incorrecto">{{codigoIncorrecto}}</p>
+        </form>
+    </div>
+  </div>
+</div>
